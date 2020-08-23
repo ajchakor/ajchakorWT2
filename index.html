@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz competition Registration</title>
+        <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="bundle.js"></script>    
+    <script src="shift.js"></script>
+           
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="navbar-nav mr-auto">
+                    <li id="btn1" class="nav-item active"><a class="nav-link" onclick="page_selector('Page1','Page2','Page3');myFunction();" href="#"> <span class="fa fa-home fa-lg"></span> Home</a></li>
+                    <li id="btn2" class="nav-item"><a class="nav-link" onclick="page_selector('Page2','Page1','Page3'); myFunction2();" href="#"> <span class="fa fa-wpforms fa-lg"></span> Register</a></li>
+                    <li id="btn3" class="nav-item"><a class="nav-link" onclick="page_selector('Page3','Page2','Page1');myFunction3();" href="#" href="#"> <span class="fa fa-list fa-lg"></span> Show registrations</a></li>
+    
+                </ul>
+            </div>
+            
+        </div>
+    </nav>
+    <div id="Page1">
+          <section id="hero" class="d-flex flex-column justify-content-end align-items-center">
+    <div id="heroCarousel" class="container carousel carousel-fade" data-ride="carousel">
+      <div class="carousel-item active">
+        <div class="carousel-container">
+          <h2 class="animate__animated animate__fadeInDown">MIT Academy of Engineering's <br> <span class="title">Quiz competition</span></h2>
+          <p class="animate__animated fanimate__adeInUp">Quiz baed on your your overall knowledge for college students from all over Maharastra.  
+          <br>Cash prizes worth 20k, Goodies and much more.
+          <br><i>Register quickly. Only limited seats</i>
+          </p>
+         
+        </div>
+      </div>   
+    </div>
+
+    
+    </section>
+
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title" data-aos="zoom-out">
+          <h2>Different categories</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="icon-box" data-aos="zoom-in-left">
+              <h4 class="title"><a href="">Computer and Technology</a></h4>
+              <p class="description">Test your coding skills to devise the best and easiest solution</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mt-5 mt-md-0">
+            <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="100">
+              <h4 class="title"><a href="">General Knowledge</a></h4>
+              <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mt-5 mt-lg-0 ">
+            <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="200">
+              <h4 class="title"><a href="">Event 3</a></h4>
+              <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mt-5">
+            <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="300">
+              <h4 class="title"><a href="">Event 4</a></h4>
+              <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mt-5">
+            <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="400">
+              <h4 class="title"><a href="">Event 5</a></h4>
+              <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mt-5">
+            <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="500">
+              <h4 class="title"><a href="">Event 6</a></h4>
+              <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    </div>
+    <div id="Page2" style="display: none;">
+        <form>
+            <div class="formBox">
+                <input type="text" id="ename" placeholder="Event name" required><br>
+            </div>
+            <div class="formBox">
+                <input type="number" min="100" step="50"id="capacity" placeholder="Capacity" required>
+            </div>
+             <div class="formBox">
+                <input type="text"id="city" placeholder="City" required><br>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Paid">
+                <label class="form-check-label" for="inlineRadio2">Paid</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="Unpaid">
+                <label class="form-check-label" for="inlineRadio1">Unpaid</label>
+              </div><br>
+            <div class="formBox">
+                <textarea id="address"=value ="address"placeholder="Address" required></textarea> <br>
+            </div><br>
+            <div class="formBox">
+                <button id="btn" class="button" onclick="formValidate()">Submit</button>
+            </div>
+        </form>
+      </div>
+    
+      <div id="Page3" style="display:none">
+        <table class="table table-striped">
+            <tr  class="bg-light">
+                <th>Title</th>
+                <th>Released Year</th>
+                <th>City</th>
+                <th>Address</th>
+                <th>Fees</th>  
+                <th>Timestamp</th>               
+            </tr>
+        
+            <tbody id="myTable">
+                
+            </tbody>
+        </table>         
+      </div>
+
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
