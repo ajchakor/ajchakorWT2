@@ -3,7 +3,7 @@
     margin: 0px;
 }
 .navbar-dark{
-    background: rgba(24, 110, 209, 0.85);
+    background: rgba(66, 120, 165, 0.85);
     font-size: 20px;
     font-weight: lighter;
 }
@@ -11,19 +11,19 @@
  margin:0px 5px;
 }
 .navbar-dark ul li:hover{
-border: 3px solid rgb(27, 41, 236);
+border: 1px solid #fff;
 }
 .navbar-dark ul li:hover a{
-color: #000;
+color: rgb(0, 0, 0);
 }
 .title{
-    color: #4ea3d4;
+    color: #4782b3;
 }
 #hero {
   width: 100%;
   overflow: hidden;
   position: relative;
-  background: #444;
+  background: rgb(31, 36, 61);
   padding: 0;
   margin-top: 12px;
 }
@@ -81,10 +81,7 @@ color: #000;
   height: 100%;
 }
 
-.services .icon-box:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 2px 35px 0 rgba(68, 88, 144, 0.2);
-}
+
 .services .title {
   margin-left: 40px;
   font-weight: 700;

@@ -35,9 +35,9 @@ function displayRadioValue()
              
         } 
         eName= document.getElementById('ename').value;
-        cap= document.getElementById('capacity').value;
-        city= document.getElementById('city').value;
-        address= document.getElementById('address').value;
+        cap= document.getElementById('age').value;
+        clg= document.getElementById('clg').value;
+        phone= document.getElementById('phone').value;
         if(eName==""||eName==null)
         {
              alert("Name required");
@@ -52,19 +52,19 @@ function displayRadioValue()
             alert("No numeric value allowed in name");
             return false;
         }
-        else if(city==""||city==null)
+        else if(clg==""||clg==null)
         {
-            alert("City required");
+            alert("College Name required");
             return false;
         }
-        else if(city.length<3||city.length>30)
+        else if(clg.length<3||clg.length>30)
         {
-            alert("Length should be 3-30");
+            alert("College length should be 3-30");
             return false;
         }
-        else if(isNaN(city)==false)
+        else if(isNaN(clg)==false)
         {
-            alert("No numeric value allowed in city");
+            alert("No numeric value allowed in college name");
             return false;
         }
         else if(valid==false)
@@ -72,21 +72,31 @@ function displayRadioValue()
             alert("Select an option");
             return false;
         } 
-        else if(address.length<3)
+        else if(isNaN(phone)==true)
         {
-            alert("Address required Minimum length should be 3");
+            alert("Phone number should have digits only");
             return false;
+        }
+        else if(phone.length!=10)
+        {
+            alert("Phone number should be 10 digits only");
+            return false;
+        }
+    
+        else if(cap<18)
+        {
+            alert("Minimum age must be 18");
         }
         else
         {
-            alert("Submitted, check in show Events section");
+            alert("Submitted, check in show registrations section");
             var milli= Date.now();
             let data = {
                 id: millisecondsToTime(milli),
                 eName: document.getElementById('ename').value,
-                cap: document.getElementById('capacity').value,
-                city: document.getElementById('city').value,
-                address: document.getElementById('address').value
+                cap: document.getElementById('age').value,
+                clg: document.getElementById('clg').value,
+                phone: document.getElementById('phone').value
             }
             eventData.push(data);
             document.forms[0].reset();
@@ -107,8 +117,8 @@ function displayRadioValue()
             var row = `<tr>            
                             <td>${data[i].eName}</td>
                             <td>${data[i].cap}</td>
-                            <td>${data[i].city}</td>
-                            <td>${data[i].address}</td>
+                            <td>${data[i].clg}</td>
+                            <td>${data[i].phone}</td>
                             <td>${window.genre}</td>
                             <td>${data[i].id}</td>        
                         </tr>`
